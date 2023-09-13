@@ -14,7 +14,10 @@
             @Html.DisplayNameFor(model => model.Gender)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Gender)
+            @{
+                string genderDisplay = Model?.Gender == 1 ? "Male" : "Female";
+            }
+            @Html.DisplayFor(modelItem => genderDisplay)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.DOB)
@@ -34,15 +37,10 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ModificationDate)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClassInfo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClassInfo.Name)
-        </dd>
+        
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-controller="StudentInfo" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+    <a asp-controller="StudentInfo"asp-action="Index">Back to List</a>
 </div>

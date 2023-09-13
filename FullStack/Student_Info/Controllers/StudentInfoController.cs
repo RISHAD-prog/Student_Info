@@ -14,8 +14,15 @@ namespace Student_Info.Controllers
         }
         public IActionResult Get()
         {
-            var result = db.Students.ToList();
-            return View(result);
+            var StudentInfo = db.Students.ToList();
+            var ClassInfo = db.ClassInfos.ToList();
+            var viewModel = new StudentAndClassList
+            {
+                Info = StudentInfo,
+                ClassDetails = ClassInfo
+            };
+
+            return View(viewModel);
         }
         [HttpGet]
         public IActionResult AddStudent()
@@ -51,13 +58,11 @@ namespace Student_Info.Controllers
             var info = db.Students.SingleOrDefault(x => x.Id == id);
             if(info != null)
             {
-                var singleClassInfo = db.ClassInfos.SingleOrDefault(x => x.Id == info.ClassId);
                 var ClassDetails = db.ClassInfos.ToList();
                 var viewModel = new StudentWithViewModel
                 {
                     Info = info,
-                    ClassDetails = ClassDetails,
-                    SingleClassInfo = singleClassInfo
+                    ClassDetails = ClassDetails
                 };
 
                 return View(viewModel);

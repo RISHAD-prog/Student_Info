@@ -5,7 +5,5 @@
         
             public Student? Info { get; set; }
             public List<ClassInfo>? ClassDetails { get; set; }
-
-            public ClassInfo? SingleClassInfo { get; set; }
     }
 }

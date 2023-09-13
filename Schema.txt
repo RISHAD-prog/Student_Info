@@ -1,0 +1,35 @@
+-- Student Table
+CREATE TABLE [dbo].[Students] (
+    [Id] [uniqueidentifier] NOT NULL,
+    [Name] [nvarchar](max),
+    [Gender] [int] NOT NULL,
+    [DOB] [datetime] NOT NULL,
+    [ClassId] [int] NOT NULL,
+    [CreateDate] [datetime] NOT NULL,
+    [ModificationDate] [datetime] NOT NULL
+);
+
+-- Primary Key for Student Table
+ALTER TABLE [dbo].[Students]
+ADD CONSTRAINT [PK_Students]
+PRIMARY KEY ([Id]);
+
+-- Foreign Key Constraint
+ALTER TABLE [dbo].[Students]
+ADD CONSTRAINT [FK_Students_ClassInfo]
+FOREIGN KEY ([ClassId])
+REFERENCES [dbo].[ClassInfo] ([Id]);
+
+
+-- ClassInfo Table
+CREATE TABLE [dbo].[ClassInfo] (
+    [Id] [int] NOT NULL,
+    [Name] [nvarchar](max) NOT NULL,
+    [CreateDate] [datetime] NOT NULL,
+    [ModificationDate] [datetime] NOT NULL
+);
+
+-- Primary Key for ClassInfo Table
+ALTER TABLE [dbo].[ClassInfo]
+ADD CONSTRAINT [PK_ClassInfo]
+PRIMARY KEY ([Id]);
