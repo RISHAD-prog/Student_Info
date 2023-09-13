@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Student_Info
 build_property.RootNamespace = Student_Info
-build_property.ProjectDir = E:\Quad Theory\Backend\Student_Info\
+build_property.ProjectDir = E:\Quad Theory\FullStack\Student_Info\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Quad Theory\Backend\Student_Info
+build_property.MSBuildProjectDirectory = E:\Quad Theory\FullStack\Student_Info
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/Home/Index.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/Home/Privacy.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/Shared/Error.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/StudentInfo/AddStudent.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/StudentInfo/AddStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEluZm9cQWRkU3R1ZGVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/StudentInfo/Get.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/StudentInfo/Get.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEluZm9cR2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/_ViewImports.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/_ViewStart.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Quad Theory/Backend/Student_Info/Views/Shared/_Layout.cshtml]
+[E:/Quad Theory/FullStack/Student_Info/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uqy5tyynib

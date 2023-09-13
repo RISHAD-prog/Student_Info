@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "icNmTRJ/Gy7BtWBI8QUa2vMlC8cPr/+pPOrQss9AQq0A0kNvl2KjhysEjsqx/8LDK9VZoZAdyVSUlJ6POX199w==",
+  "dgSpecHash": "uBd/wJO2aWdYVDxHNytvENTzk1hoA8Huc9/wp+FWE0B1ylVtQP0LYsEHFNE53ruk63eNBzmiqay4tTanKka0qQ==",
   "success": true,
-  "projectFilePath": "E:\\Quad Theory\\Backend\\Student_Info\\Student_Info.csproj",
+  "projectFilePath": "E:\\Quad Theory\\FullStack\\Student_Info\\Student_Info.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\risha\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\risha\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

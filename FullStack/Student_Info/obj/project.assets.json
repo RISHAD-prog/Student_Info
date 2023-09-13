@@ -11115,11 +11115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Quad Theory\\Backend\\Student_Info\\Student_Info.csproj",
+      "projectUniqueName": "E:\\Quad Theory\\FullStack\\Student_Info\\Student_Info.csproj",
       "projectName": "Student_Info",
-      "projectPath": "E:\\Quad Theory\\Backend\\Student_Info\\Student_Info.csproj",
+      "projectPath": "E:\\Quad Theory\\FullStack\\Student_Info\\Student_Info.csproj",
       "packagesPath": "C:\\Users\\risha\\.nuget\\packages\\",
-      "outputPath": "E:\\Quad Theory\\Backend\\Student_Info\\obj\\",
+      "outputPath": "E:\\Quad Theory\\FullStack\\Student_Info\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
