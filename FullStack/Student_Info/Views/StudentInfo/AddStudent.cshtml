@@ -1,0 +1,54 @@
+﻿
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="text-danger"></div>
+            <div class="form-group">
+                <label for="Name" class="control-label">Name</label>
+                <input type="text" name="Name" class="form-control" />
+                <span  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Gender" class="control-label">Gender</label>
+                <input type="radio" name="Gender" class="form-control form-check-input" value="1" id="Male"/>
+                <label class="form-check-label" for="Male">
+                    Male
+                </label>
+                <input type="radio" name="Gender" class="form-control form-check-input" value="0" id="FeMale" />
+                <label class="form-check-label" for="FeMale">
+                    FeMale
+                </label>
+                <span  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="DOB" class="control-label">Date Of Birth</label>
+                <input type="date" name="DOB" class="form-control" />
+                <span  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="ClassId" class="control-label">Class</label>
+                <select name="ClassId" class="form-control">
+                    <option selected>Open this select menu</option>
+                    @foreach(var item in Model)
+                    {
+                        <option value=@item.Id>@item.Name</option>
+                    }        
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
