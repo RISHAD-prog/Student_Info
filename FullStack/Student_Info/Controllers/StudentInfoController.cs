@@ -36,11 +36,32 @@ namespace Student_Info.Controllers
                 CreateDate = DateTime.Now,
                 ModificationDate = DateTime.Now.AddDays(1),
             });
-            if(db.SaveChanges() > 0)
+            if (db.SaveChanges() > 0)
             {
                 return RedirectToAction("Get");
             }
-            TempData["msg"]="Value not added";
+            TempData["msg"] = "Value not added";
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Details(Guid id)
+        {
+            var info = db.Students.SingleOrDefault(x => x.Id == id);
+            return View(info);
+        }
+        public IActionResult Delete(Guid id)
+        {
+            var student = db.Students.SingleOrDefault(x => x.Id == id);
+
+            if (student != null)
+            {
+                db.Students.Remove(student); 
+                if (db.SaveChanges() > 0)
+                {
+                    return RedirectToAction("Get");
+                }
+            }
+            TempData["msg"] = "Value not deleted";
             return View();
         }
     }
