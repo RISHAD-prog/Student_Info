@@ -43,6 +43,44 @@ namespace Student_Info.Controllers
             TempData["msg"] = "Value not added";
             return View();
         }
+
+        [HttpGet]
+
+        public IActionResult Edit(Guid id)
+        {
+            var info = db.Students.SingleOrDefault(x => x.Id == id);
+            if(info != null)
+            {
+                var singleClassInfo = db.ClassInfos.SingleOrDefault(x => x.Id == info.ClassId);
+                var ClassDetails = db.ClassInfos.ToList();
+                var viewModel = new StudentWithViewModel
+                {
+                    Info = info,
+                    ClassDetails = ClassDetails,
+                    SingleClassInfo = singleClassInfo
+                };
+
+                return View(viewModel);
+            }
+            TempData["msg"] = "Value not added";
+            return View();
+        }
+        [HttpPost]
+
+        public IActionResult Edit(Student student)
+        {
+            var info = db.Students.SingleOrDefault(x => x.Id == student.Id);
+            if(info != null)
+            {
+                db.Entry(info).CurrentValues.SetValues(student);
+                if (db.SaveChanges() > 0)
+                {
+                    return RedirectToAction("Get");
+                }
+            } 
+            TempData["msg"] = "Value not added";
+            return View();
+        }
         [HttpGet]
         public IActionResult Details(Guid id)
         {
